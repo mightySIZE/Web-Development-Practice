@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Welcome to Our Django App!</h1>
+            <p>
+                This is a simple Django app built using the Django web framework. You can explore our features, check out our latest updates, or sign up to start using our services.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Feature 1</h2>
+            <p>
+                This is a brief description of Feature 1. Explain what it does, how it works, and what benefits it provides to users.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h2>Feature 2</h2>
+            <p>
+                This is a brief description of Feature 2. Explain what it does, how it works, and what benefits it provides to users.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Ready to Get Started?</h3>
+            <p>
+                Click the button below to sign up and start using our amazing features!
+            </p>
+            <a href="{% url 'signup' %}" class="btn btn-primary">Sign Up</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
